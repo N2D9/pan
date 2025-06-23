@@ -67,14 +67,6 @@ body {
     transform: scale(1.1); /* ホバーでちょっと大きくなる */
   }
   
-  buttonon {
-    margin-left: -20px;
-  }
-
-  buttonoff {
-    margin-left: 40px;
-  }
-
   /* ロゴは最初非表示 */
 #logo-container {
     display: flex;

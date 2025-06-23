@@ -17,7 +17,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 2em;
+    padding: 0;
     z-index: 1000; /* ← これがないとボタンが背後になることがある */
   }
 
@@ -49,7 +49,7 @@ body {
     background: none;
     border: none;
     cursor: pointer;
-    padding: 1em;
+    padding: 0em;
   }
   
   button img {
@@ -59,8 +59,8 @@ body {
   .buttons {
     display: flex;
     justify-content: center;
-    gap: 2em; /* ボタンの間隔（調整可） */
-    margin-top: 1.5em;
+    gap: 3em; /* ボタンの間隔（調整可） */
+    margin-top: 0em;
   }
 
   button:hover img {

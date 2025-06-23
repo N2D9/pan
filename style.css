@@ -32,13 +32,6 @@ body {
     opacity: 0;
     animation: fadeInUp 0.8s ease-out forwards;
   }
-
-  h1 {
-    margin-left: -20px;
-  }
-  p {
-    margin-left: -15px;
-  }
   
   /* 2つ目の要素用に遅延を追加 */
 .fade-in-up.delay-1 {
@@ -63,6 +56,13 @@ body {
     transition: transform 0.2s ease;
   }
   
+  .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 2em; /* ボタンの間隔（調整可） */
+    margin-top: 1.5em;
+  }
+
   button:hover img {
     transform: scale(1.1); /* ホバーでちょっと大きくなる */
   }

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>演劇紹介サイト</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="intro">
+    <div class="overlay">
+      <h1 class="fade-in-up">音が出ます</h1>
+      <p class="fade-in-up delay-1">本ページでは音声が流れます。音量にご注意ください。</p>
+      <div class="buttons">
+        <button onclick="startSite(true)">
+          <img class="fade-in-volume" src="volumeon.png" alt="音を出す" width="84" height="64">
+        </button>
+        <button onclick="startSite(false)">
+          <img class="fade-in-volume" src="volumeoff.png" alt="ミュート" width="84" height="64">
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ロゴ（最初は非表示） -->
+<div id="logo-container">
+  <img src="logo.png" alt="ロゴ" id="logo">
+</div>
+
+  <div id="main" style="display: none;">
+    <h1>ようこそ</h1>
+    <p>ここにメインページの内容が入ります。</p>
+  </div>
+
+  <audio id="bgm" src="sound.wav" loop></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>

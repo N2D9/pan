@@ -1,0 +1,102 @@
+/* 全体の基本設定 */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #111111; /* 背景を黒に */
+    color: #EEEEEE;             /* 文字を白に */
+    font-family: 'Noto Sans JP', sans-serif; /* フォントを変更 */
+    text-align: center;
+  }
+  
+  /* 中央表示のためのオーバーレイ */
+.overlay {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    z-index: 1000; /* ← これがないとボタンが背後になることがある */
+  }
+
+  /* フェードイン（下からふわっと） */
+.fade-in-up {
+    opacity: 0;
+    transform: translateY(20px); /* 下から */
+    animation: fadeInUp 0.8s ease-out forwards;
+  }
+
+  .fade-in-volume {
+    opacity: 0;
+    animation: fadeInUp 0.8s ease-out forwards;
+  }
+
+
+  p {
+    margin-left: 20px
+  }
+  
+  /* 2つ目の要素用に遅延を追加 */
+.fade-in-up.delay-1 {
+    animation-delay:0.2s; /* 1秒遅らせて開始 */
+  }
+
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 1em;
+  }
+  
+  button img {
+    transition: transform 0.2s ease;
+  }
+  
+  button:hover img {
+    transform: scale(1.1); /* ホバーでちょっと大きくなる */
+  }
+  
+  /* ロゴは最初非表示 */
+#logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #111111;
+    opacity: 0;
+    transition: opacity 0.8s ease-in;
+  }
+
+  #logo {
+    width: 60vw;       /* 画面幅の60%（好みに応じて調整） */
+    max-width: 400px;  /* 最大幅（これ以上大きくならない） */
+    height: auto;      /* 縦横比を保つ */
+  }
+  
+  
+  /* フェードアウトに使うクラス */
+  .fade-out-first {
+    opacity: 0;
+    transition: opacity 0.8s ease-out;
+  }
+  
+  /* フェードイン用（ロゴに使う） */
+  .fade-in-logo {
+    opacity: 1 !important;
+    transition: opacity 0.8s ease-in;
+  }
+
+  .fade-out-logo {
+    opacity: 0 !important;
+    transition: opacity 0.8s ease-out;
+  }
+  

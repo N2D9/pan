@@ -28,7 +28,7 @@ function startSite(withSound) {
         logoContainer.style.display = "none";
         main.style.display = "block";
       }, 1400); // ロゴのフェードアウトが終わるまで待つ
-    }, 2300); // ロゴを出してから3秒後に次の演出へ
+    }, 2000); // ロゴを出してから3秒後に次の演出へ
 
   }, 1400); // フェードアウトに合わせて1秒待つ
 

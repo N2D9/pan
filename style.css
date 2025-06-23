@@ -33,9 +33,11 @@ body {
     animation: fadeInUp 0.8s ease-out forwards;
   }
 
-
+  h1 {
+    margin-left: -20px;
+  }
   p {
-    margin-left: 20px
+    margin-left: -15px;
   }
   
   /* 2つ目の要素用に遅延を追加 */
@@ -65,6 +67,14 @@ body {
     transform: scale(1.1); /* ホバーでちょっと大きくなる */
   }
   
+  buttonon {
+    margin-left: -20px;
+  }
+
+  buttonoff {
+    margin-left: 40px;
+  }
+
   /* ロゴは最初非表示 */
 #logo-container {
     display: flex;
